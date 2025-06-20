@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <button onclick="history.back()">⬅ Back</button>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#footer">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h1>Style Meets Elegance</h1>
+    <p>Discover your perfect outfit with our latest collection</p>
+  </section>
+
+  <section id="products" class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x250?text=Product+1" alt="Product 1">
+      <h3>Urban Jacket</h3>
+      <p>$59.99</p>
+      <button onclick="addToCart('Urban Jacket')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x250?text=Product+2" alt="Product 2">
+      <h3>Chic T-shirt</h3>
+      <p>$29.99</p>
+      <button onclick="addToCart('Chic T-shirt')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x250?text=Product+3" alt="Product 3">
+      <h3>Minimal Hoodie</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Minimal Hoodie')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x250?text=Product+4" alt="Product 4">
+      <h3>Denim Jeans</h3>
+      <p>$69.99</p>
+      <button onclick="addToCart('Denim Jeans')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x250?text=Product+5" alt="Product 5">
+      <h3>Streetwear Cap</h3>
+      <p>$19.99</p>
+      <button onclick="addToCart('Streetwear Cap')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x250?text=Product+6" alt="Product 6">
+      <h3>Classic Sneakers</h3>
+      <p>$89.99</p>
+      <button onclick="addToCart('Classic Sneakers')">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>Contact us: fashion@store.com | IG: @modernfashionstore</p>
+    <p>&copy; 2025 Modern Fashion Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

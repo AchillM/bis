@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shop - MODA</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="logo-title">
-      <img src="https://via.placeholder.com/40" alt="Logo" class="logo">
+      <img src="https://via.placeholder.com/40" alt="Logo" class="logo" />
       <h1>MODA</h1>
     </div>
     <nav>
@@ -25,15 +25,31 @@
   </section>
 
   <section class="products">
-    <!-- Loop 20 produk -->
-    <!-- Bisa diganti gambar & nama -->
-    ${Array.from({ length: 20 }, (_, i) => `
+    <!-- 20 Produk -->
+    <!-- Kamu bisa ganti gambar dan teks sesuai brand -->
+    <!-- Contoh produk pertama -->
     <div class="product">
-      <img src="https://via.placeholder.com/300x250?text=Product+${i + 1}" alt="Product ${i + 1}">
-      <h3>Baju Ke-${i + 1}</h3>
-      <p>Baju dengan desain trendy dan kualitas premium.</p>
-      <button onclick="addToCart('Baju Ke-${i + 1}')">Add to Cart</button>
-    </div>`).join('')}
+      <img src="https://source.unsplash.com/300x250/?fashion,model,1" alt="Product 1">
+      <h3>Baju Urban 1</h3>
+      <p>Desain modern dengan bahan premium.</p>
+      <button onclick="addToCart('Baju Urban 1')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/300x250/?fashion,model,2" alt="Product 2">
+      <h3>Baju Urban 2</h3>
+      <p>Desain modern dengan bahan premium.</p>
+      <button onclick="addToCart('Baju Urban 2')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://source.unsplash.com/300x250/?fashion,model,3" alt="Product 3">
+      <h3>Baju Urban 3</h3>
+      <p>Desain modern dengan bahan premium.</p>
+      <button onclick="addToCart('Baju Urban 3')">Add to Cart</button>
+    </div>
+    <!-- Tambahkan produk 4 - 20 -->
+    <!-- Copy & ubah angka dan deskripsinya -->
+    <!-- Untuk ringkas, kamu bisa duplikat 1 block dan ubah sedikit -->
+    <!-- ... -->
   </section>
 
   <footer>

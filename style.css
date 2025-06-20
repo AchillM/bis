@@ -28,6 +28,11 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  height: 32px;     /* atau 24px kalau terlalu besar */
+  width: auto;      /* biar proporsional */
+  max-width: 100%;  /* biar responsive */
+}
+
 }
 .logo {
   height: 40px;

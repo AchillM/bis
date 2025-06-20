@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - MODA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="https://via.placeholder.com/40" alt="Logo" class="logo">
+      <h1>MODA</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Koleksi Produk</h1>
+    <p>20 desain fashion eksklusif untukmu</p>
+  </section>
+
+  <section class="products">
+    <!-- Loop 20 produk -->
+    <!-- Bisa diganti gambar & nama -->
+    ${Array.from({ length: 20 }, (_, i) => `
+    <div class="product">
+      <img src="https://via.placeholder.com/300x250?text=Product+${i + 1}" alt="Product ${i + 1}">
+      <h3>Baju Ke-${i + 1}</h3>
+      <p>Baju dengan desain trendy dan kualitas premium.</p>
+      <button onclick="addToCart('Baju Ke-${i + 1}')">Add to Cart</button>
+    </div>`).join('')}
+  </section>
+
+  <footer>
+    <p>Contact us: fashion@store.com | IG: @modernfashionstore</p>
+    <p>&copy; 2025 MODA Fashion Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
